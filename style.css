@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Oswald:wght@200..700&display=swap');
+
+:root {
+  /* BRANDING COLORS */
+  --sw-color-1: #072c30;
+  --sw-color-2: #ffb400;
+  --sw-color-3: #3ac4cf;
+  --sw-color-4: #ffffff;
+  --sw-bg-1: #3c496f;
+  --sw-bg-2: #96c5e7;
+
+  /* FONTS */
+  --sw-primary-font: 'Antonio', sans-serif;
+  --sw-secondary-font: 'Oswald', sans-serif;
+
+  /* SPACINGS */
+  --sw-margin-xxs: 5px;
+  --sw-margin-xs: 10px;
+  --sw-margin-s: 20px;
+  --sw-margin-m: 30px;
+  --sw-margin-l: 40px;
+  --sw-margin-xl: 50px;
+  --sw-margin-xxl: 100px;
+  --sw-margin-xxxl: 150px;
+  --sw-margin-xxxxl: 180px;
+
+  --sw-padding-xxs: 5px;
+  --sw-padding-xs: 10px;
+  --sw-padding-s: 20px;
+  --sw-padding-m: 30px;
+  --sw-padding-l: 40px;
+  --sw-padding-xl: 60px;
+  --sw-padding-xxl: 100px;
+  --sw-padding-xxxl: 150px;
+
+  --sw-gap-xxs: 5px;
+  --sw-gap-xs: 10px;
+  --sw-gap-s: 20px;
+  --sw-gap-m: 30px;
+  --sw-gap-l: 40px;
+  --sw-gap-xl: 50px;
+  --sw-gap-xxl: 100px;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--sw-secondary-font);
+}
+
+h1 {
+  font-family: var(--sw-primary-font);
+}
+
+body {
+  min-height: 100svh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
+}

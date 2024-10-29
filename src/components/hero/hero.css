@@ -1,0 +1,182 @@
+#hero {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  background-image: url('assets/homeimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#motto {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  flex-direction: column;
+  padding-top: var(--sw-padding-xxxl);
+  padding-left: var(--sw-padding-xl);
+  gap: var(--sw-gap-l);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--sw-color-2);
+}
+
+h2 {
+  font-family: var(--sw-primary-font);
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--sw-color-4);
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--sw-color-4);
+  width: 60%;
+  filter: brightness(1.1);
+}
+
+#startQuiz {
+  color: var(--sw-bg-1);
+  font-weight: 700;
+  font-family: var(--sw-secondary-font);
+  font-size: 1rem;
+  background-color: var(--sw-color-4);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startQuiz:hover {
+  color: var(--sw-color-4);
+  background-color: var(--sw-bg-1);
+}
+
+/*MEDIAS QUERIES*/
+
+@media (max-width: 1200px) {
+  p {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1105px) {
+  p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 916px) {
+  #motto {
+    padding-top: var(--sw-padding-xxl);
+  }
+
+  p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 864px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+  p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 725px) {
+  h1 {
+    font-size: 3.3rem;
+  }
+}
+
+@media (max-width: 643px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #motto {
+    width: 100%;
+  }
+
+  h2 {
+    width: 70%;
+  }
+
+  p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 490px) {
+  #motto {
+    padding-right: var(--sw-padding-l);
+  }
+  #hero {
+    background-position: left;
+  }
+  h2 {
+    width: 100%;
+  }
+  p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 395px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 376px) {
+  #motto {
+    padding-left: var(--sw-padding-l);
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  #startQuiz {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 336px) {
+  #motto {
+    padding-top: var(--sw-padding-xl);
+  }
+}
+
+@media (max-width: 291px) {
+  #startQuiz {
+    font-size: 0.9rem;
+  }
+}

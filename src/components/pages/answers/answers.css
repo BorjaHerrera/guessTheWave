@@ -1,0 +1,163 @@
+#clue-answers {
+  width: 40%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding-top: var(--sw-padding-xxl);
+  padding-left: var(--sw-padding-xs);
+  gap: var(--sw-gap-s);
+}
+
+.clue {
+  width: 100%;
+  color: #94baf8;
+  font-size: 2.1rem;
+  padding: var(--sw-padding-m);
+  padding-top: var(--sw-padding-l);
+  padding-bottom: var(--sw-padding-xxs);
+}
+.answers-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--sw-gap-s);
+  padding-left: var(--sw-padding-m);
+  padding-right: var(--sw-padding-m);
+}
+
+.wave-info-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 220px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.wave-info-container:hover {
+  background-color: var(--sw-bg-2);
+}
+
+.wave-name {
+  color: var(--sw-color-1);
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: var(--sw-secondary-font);
+}
+
+/*MEDIAS QUERIES*/
+
+@media (max-width: 1350px) {
+  .clue {
+    width: 100%;
+    font-size: 2rem;
+    padding-top: var(--sw-padding-m);
+  }
+  #clue-answers {
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 1270px) {
+  #clue-answers {
+    width: 38%;
+  }
+  .clue {
+    font-size: 2rem;
+  }
+
+  .answers-container {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #clue-answers {
+    padding-top: 120px;
+  }
+  .clue {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 997px) {
+  .clue {
+    font-size: 1.6rem;
+  }
+
+  .answers-container {
+    gap: 12px;
+  }
+}
+
+/*imagen tamaño completo*/
+
+@media (max-width: 906px) {
+  #clue-answers {
+    width: 100%;
+    align-items: center;
+    padding-top: var(--sw-padding-xxs);
+    padding-left: 0;
+  }
+
+  .clue {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+
+  .answers-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    gap: var(--sw-gap-s);
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: var(--sw-padding-xs);
+    flex-wrap: wrap;
+    padding-bottom: var(--sw-padding-l);
+  }
+}
+
+@media (max-width: 700px) {
+  .answers-container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 511px) {
+  .wave-info-container {
+    width: 200px;
+  }
+
+  .wave-name {
+    font-size: 1rem;
+  }
+  .clue {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 466px) {
+  .wave-info-container {
+    width: 400px;
+    justify-content: center;
+  }
+  .wave-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .clue {
+    padding-left: var(--sw-padding-s);
+    padding-right: var(--sw-padding-s);
+    font-size: 1.4rem;
+  }
+}

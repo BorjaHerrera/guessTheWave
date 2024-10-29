@@ -1,0 +1,155 @@
+#quiz {
+  width: 100%;
+  min-height: 100svh;
+  background: radial-gradient(circle at left center, #95bbf9 35%, #3c496f 35%);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+#quiz-hero {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.quiz-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: var(--sw-padding-m);
+  padding-left: var(--sw-padding-xl);
+  padding-bottom: var(--sw-padding-m);
+  gap: var(--sw-gap-s);
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+  padding-bottom: var(--sw-padding-s);
+}
+
+.h1-title {
+  font-family: var(--sw-primary-font);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--sw-color-4);
+  padding-bottom: var(--sw-padding-s);
+}
+
+.h2-title {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: var(--sw-primary-font);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--sw-color-4);
+  padding-top: var(--sw-padding-l);
+  padding-left: var(--sw-padding-xl);
+  padding-bottom: var(--sw-padding-m);
+}
+
+/*MEDIAS QUERIES*/
+
+@media (max-width: 1270px) {
+  #quiz-hero {
+    width: 62%;
+    justify-content: start;
+    align-items: start;
+  }
+  .h4-title {
+    padding-top: var(--sw-padding-xl);
+  }
+}
+
+@media (max-width: 1200px) {
+  .h2-title {
+    width: 93%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .h2-title {
+    width: 100%;
+  }
+}
+
+/*imagen tamaño completo*/
+@media (max-width: 906px) {
+  #quiz {
+    background: radial-gradient(circle at right top, #95bbf9 32%, #3c496f 32%);
+    width: 100%;
+    flex-direction: column;
+  }
+  #quiz-hero {
+    width: 100%;
+    align-items: center;
+  }
+
+  .quiz-title {
+    width: 100%;
+    align-items: center;
+    padding-left: 8%;
+    padding-bottom: var(--sw-padding-s);
+  }
+
+  .h1-title {
+    font-size: 2.7rem;
+  }
+
+  .h2-title {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .h1-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 511px) {
+  .quiz-title {
+    padding-left: 6%;
+    padding-bottom: var(--sw-padding-xs);
+  }
+
+  .h1-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 466px) {
+  .h1-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #logo {
+    width: 50px;
+  }
+  .h1-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .quiz-title {
+    gap: var(--sw-gap-xs);
+  }
+
+  .h1-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .h1-title {
+    font-size: 1.8rem;
+  }
+}
