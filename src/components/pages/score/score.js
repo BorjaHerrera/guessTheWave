@@ -51,7 +51,7 @@ export const printScore = (score) => {
   scoreContainer.id = 'final-score';
 
   const scoreFinalImage = document.createElement('img');
-  scoreFinalImage.src = 'assets/score.png';
+  scoreFinalImage.src = 'https://i.postimg.cc/wxkWRjSK/score.png';
   scoreFinalImage.className = 'hidden';
 
   const scoreNumber = document.createElement('p');
