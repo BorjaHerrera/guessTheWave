@@ -29,6 +29,7 @@
   width: 60px;
   height: auto;
   padding-bottom: var(--sw-padding-s);
+  cursor: pointer;
 }
 
 .h1-title {
