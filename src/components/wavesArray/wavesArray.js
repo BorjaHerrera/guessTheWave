@@ -25,7 +25,7 @@ export const waves = [
     clue: 'Famous for its long, fast rights, considered one of the best waves in the world.'
   },
   {
-    image: 'hhttps://i.postimg.cc/DwtD8DPz/Mavericks.jpg',
+    image: 'https://i.postimg.cc/DwtD8DPz/Mavericks.jpg',
     name: 'Mavericks, California',
     clue: 'A legendary big wave spot, famous for its massive winter swells.'
   },
