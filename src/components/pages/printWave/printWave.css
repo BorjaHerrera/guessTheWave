@@ -22,15 +22,7 @@
   }
 }
 
-@media (max-width: 997px) {
-  .wave-img {
-    min-height: 350px;
-  }
-}
-
-/*imagen tamaño completo*/
-
-@media (max-width: 906px) {
+@media (max-width: 1000px) {
   .wave-container {
     width: 84%;
     display: flex;
@@ -40,7 +32,7 @@
   }
 
   .wave-img {
-    max-height: 300px;
+    max-height: 350px;
     min-height: 200px;
   }
 }

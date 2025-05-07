@@ -1,30 +1,34 @@
 #hero {
+  display: flex;
   position: relative;
   width: 100%;
   min-height: 100svh;
+  height: 100%;
   background-image: url('https://i.postimg.cc/8zrXQ4gg/homeimage.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  justify-content: start;
+  align-items: center;
 }
 
 #motto {
   width: 60%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   text-align: start;
   flex-direction: column;
-  padding-top: var(--sw-padding-xxxl);
   padding-left: var(--sw-padding-xl);
-  gap: var(--sw-gap-l);
+  gap: var(--sw-gap-xl);
 }
 
 h1 {
   font-size: 4rem;
   font-weight: 700;
   color: var(--sw-color-2);
+  width: 100%;
 }
 
 h2 {
@@ -74,41 +78,20 @@ p {
 }
 
 @media (max-width: 916px) {
-  #motto {
-    padding-top: var(--sw-padding-xxl);
-  }
-
   p {
     width: 90%;
   }
 }
 
 @media (max-width: 864px) {
-  h1 {
-    font-size: 3.8rem;
-  }
-  p {
+  #motto {
     width: 100%;
   }
 }
 
-@media (max-width: 725px) {
-  h1 {
-    font-size: 3.3rem;
-  }
-}
-
-@media (max-width: 643px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
+@media (max-width: 864px) {
   p {
-    font-size: 1.2rem;
+    width: 70%;
   }
 }
 
@@ -143,7 +126,7 @@ p {
 
 @media (max-width: 395px) {
   h1 {
-    font-size: 2.8rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -152,26 +135,26 @@ p {
     padding-left: var(--sw-padding-l);
   }
 
-  h1 {
-    font-size: 2.6rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
   #startQuiz {
     font-weight: 600;
   }
 }
 
-@media (max-width: 336px) {
-  #motto {
-    padding-top: var(--sw-padding-xl);
+@media (max-width: 338px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 304px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 299px) {
+  h1 {
+    font-size: 3.2rem;
   }
 }
 

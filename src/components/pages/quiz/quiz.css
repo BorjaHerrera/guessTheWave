@@ -4,7 +4,7 @@
   background: radial-gradient(circle at left center, #95bbf9 35%, #3c496f 35%);
   display: flex;
   justify-content: start;
-  align-items: start;
+  align-items: center;
 }
 
 #quiz-hero {
@@ -13,6 +13,7 @@
   justify-content: start;
   align-items: start;
   flex-direction: column;
+  gap: var(--sw-gap-m);
 }
 
 .quiz-title {
@@ -51,7 +52,7 @@
   color: var(--sw-color-4);
   padding-top: var(--sw-padding-l);
   padding-left: var(--sw-padding-xl);
-  padding-bottom: var(--sw-padding-m);
+  padding-bottom: var(--sw-padding-l);
 }
 
 /*MEDIAS QUERIES*/
@@ -79,8 +80,7 @@
   }
 }
 
-/*imagen tamaño completo*/
-@media (max-width: 906px) {
+@media (max-width: 1000px) {
   #quiz {
     background: radial-gradient(circle at right top, #95bbf9 32%, #3c496f 32%);
     width: 100%;
